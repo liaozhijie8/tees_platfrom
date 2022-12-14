@@ -20,7 +20,8 @@ export default {
         width: "",
       },
       userName:'',
-      URL: "http://localhost:8094/login?jumpto=http://localhost:8094/case/caseList/1",
+      // URL: "http://localhost:8000/login?jumpto=http://localhost:8000/case/caseList/1",
+      URL:'http://localhost:8000'
 
       // URL:"http://mqjc.littlehee.com/login?jumpto=http://mqjc.littlehee.com/case/caseList/1",
     };
@@ -35,7 +36,7 @@ export default {
   created() {
     window.addEventListener("resize", this.getHeight);
     this.userName = localStorage.getItem("userName")
-    this.URL = `${this.URL}?userName=${this.userName}`
+    this.URL = `${this.URL}?${this.userName}`
     this.getHeight();
   },
   mounted(){
