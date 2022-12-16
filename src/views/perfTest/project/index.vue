@@ -21,7 +21,7 @@ export default {
       },
       userName:'',
       // URL: "http://localhost:8000/login?jumpto=http://localhost:8000/case/caseList/1",
-      URL:'http://localhost:8000'
+      URL:'http://localhost:8000/login'
 
       // URL:"http://mqjc.littlehee.com/login?jumpto=http://mqjc.littlehee.com/case/caseList/1",
     };
